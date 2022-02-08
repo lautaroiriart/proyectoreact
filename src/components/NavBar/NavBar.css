@@ -1,0 +1,17 @@
+.navBar-items li{
+    text-decoration: none;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+.navBar-items{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
