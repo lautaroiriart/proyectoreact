@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
-    <NavBar/>
+    <React.Fragment>
+      <NavBar/>
+      <ItemListContainer/>
+    </React.Fragment>
   );
 }
 
