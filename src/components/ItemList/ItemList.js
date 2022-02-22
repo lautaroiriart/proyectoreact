@@ -55,12 +55,12 @@ const ItemList= ()=> {
                 return(
 
                     <div >  
-                        
-                        <Grid key={product.id}>
-                                <Item  nombre={product.nombre} precio={product.precio} stock={product.stock} pictureUrl={product.pictureUrl}/>
-                                <ItemCount stock={product.stock}/>
+                        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+                            <Grid key={product.id} item xs={6}>
+                                    <Item  nombre={product.nombre} precio={product.precio} stock={product.stock} pictureUrl={product.pictureUrl}/>
+                                    <ItemCount stock={product.stock}/>
+                            </Grid>
                         </Grid>
-
                     </div>
 
                 )
